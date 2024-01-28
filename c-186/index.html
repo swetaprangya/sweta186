@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    
+    <script src="https://unpkg.com/aframe-spe-particles-component@^1.0.4/dist/aframe-spe-particles-component.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-camera position="0 0 30">
+        </a-camera>
+        <a-sky color="black"></a-sky>
+      <a-entity position="0 7 0" spe-particles="
+      color:red,pink,yellow,green;
+      distribution:sphere;
+      randomeyes-velocity:true;
+      radius:1;
+      particle-count:5000;
+      velocity:10;
+      velocity-spread:15;
+      duration:-5;
+      drag:1;
+      max-age:2;
+      blanding:additive;
+      active-multiplier:1000;
+      size:1,1,0;
+      "
+      
+      > 
+
+      </a-entity>
+      <a-entity position="0 -8 0" spe-particles="
+      color:yellow,green,cyne,red;
+      distribution:sphere;
+      randomeyes-velocity:true;
+      radius:1;
+      particle-count:5000;
+      velocity:6;
+      velocity-spread:15;
+      duration:-1;
+      drag:1;
+      max-age:2;
+      blanding:additive;
+      active-multiplier:1000;
+      size:1,1,0;
+      "
+      
+      > 
+
+      </a-entity>
+
+      <a-entity position="-16 0 0" spe-particles="
+      color:yellow,cyne,red,green;
+      distribution:sphere;
+      randomeyes-velocity:true;
+      radius:1;
+      particle-count:2000;
+      velocity:3;
+      velocity-spread:15;
+      duration:-1;
+      drag:1;
+      max-age:2;
+      blanding:additive;
+      active-multiplier:1000;
+      size:1,1,0;
+      "
+      
+      > 
+
+      </a-entity>
+
+      <a-entity position="0 0 -10" spe-particles="
+      color:red,green,yellow,blue;
+      distribution:sphere;
+      randomeyes-velocity:true;
+      radius:1;
+      particle-count:5000;
+      velocity:100;
+      velocity-spread:15;
+      duration:-1;
+      drag:1;
+      max-age:2;
+      blanding:additive;
+      active-multiplier:1000;
+      size:1,1,0;
+      "
+      
+      > 
+
+      </a-entity>
+    </a-scene>
+</body>
+</html>
